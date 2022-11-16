@@ -20,11 +20,11 @@
   - http://www.neko.ne.jp/~freewing/software/macos_mojave_speed_up_setting_tips/
   - https://github.com/kevinSuttle/macOS-Defaults/blob/master/.macos
 
-## Homebrew
-- `brew bundle` を実行し、色々インストールする
-
 ## Karabiner の設定
 ### 補足
 - caps_lock → left_control に変更
 - 外部キーボードに関する設定は繋いだ状態でやる
 - なんかうまく反映されない時は karabiner を再起動したら直った
+
+## Homebrew
+- `brew bundle` を実行し、色々インストールする
