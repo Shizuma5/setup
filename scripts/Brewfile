@@ -1,5 +1,7 @@
 cask_args appdir: "/Applications"
+brew "peco"
 brew "jq"
+brew "tmux"
 brew "mysql-client"
 brew "tfenv"
 brew "tree"
