@@ -165,10 +165,10 @@ elif which putclip >/dev/null 2>&1 ; then
 fi
 
 # git
-alias g='git'
-alias cmm='commit'
-alias ch='checkout'
-alias st='status'
+alias g='git '
+alias cmm=' commit -m '
+alias ch=' checkout'
+alias st=' status'
 alias glog='git log --oneline --decorate --graph --branches --tags --remotes --all'
 
 
