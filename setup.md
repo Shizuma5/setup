@@ -29,3 +29,47 @@
 # 開発環境の設定
 ## Homebrew
 - `brew bundle` を実行し、色々インストールする
+
+# zshrc
+```
+cp dotfiles/.vimrc ~/.zshrc
+
+source ~/.zshrc
+```
+
+# vimrc
+```
+cp dotfiles/.vimrc ~/.vimrc
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+- plugin のインストール（vim のコンソール内）
+  - :PluginInstall
+
+# SSH キーの設定
+```
+cd ~/.ssh
+ssh-keygen -t rsa
+
+pbcopy < ~/.ssh/id_rsa.pub
+```
+
+- 以下にアクセスし、SSH キーを追加
+  - https://github.com/settings/ssh
+
+- 以下で接続確認
+```
+ssh -T git@github.com
+```
+
+# Ruby 環境のセットアップ
+- brew bundle 後に以下のコマンドを実行
+```
+rbenv init
+echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
+
+rbenv install --list
+rbenv install 3.1.2
+rbenv global 3.1.2
+```
