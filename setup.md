@@ -103,6 +103,12 @@ ssh -T git@github.com
     - Esc+
       - b
 
+# clipy のセットアップ
+- brew bundle 後に実行
+  - cmd + shift + v → 設定
+    - cmd + ctrl + v メイン
+    - その他は削除
+
 # Ruby 環境のセットアップ
 - brew bundle 後に以下のコマンドを実行
 ```
