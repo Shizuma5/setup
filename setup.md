@@ -63,6 +63,46 @@ pbcopy < ~/.ssh/id_rsa.pub
 ssh -T git@github.com
 ```
 
+# iterm2 のセットアップ
+## window 設定
+- General > Window > Native full screen windows
+  - false
+- Profiles > Windows > Transparancy
+  - 37
+- Profiles > Windows > Style
+  - Full Screen
+- Profiles > Windows > Screen
+  - Screen with Cursor
+- Profiles > Windows > Space
+  - All Spaces
+- Profiles > Windows > Keys > General > Left Option key
+  - Esc+
+- Profiles > Windows > Keys > General > A hotkey opens a dedicated window with thid profile.
+  - true
+- Profiles > Windows > Keys > General > A hotkey opens a dedicated window with thid profile.
+  - configure hotkey window
+    - floating window
+      - true
+    - hotkey
+      - option + space
+
+## option arrow で単語移動
+- Profiles > Windows > Keys > Key Mapping > 左下の+
+  - 1 つ目
+    - Keyboard Shortcut
+      - option + →
+    - Action
+      - Send Escape Sequence
+    - Esc+
+      - f
+  - 2 つ目
+    - Keyboard Shortcut
+      - option + ←
+    - Action
+      - Send Escape Sequence
+    - Esc+
+      - b
+
 # Ruby 環境のセットアップ
 - brew bundle 後に以下のコマンドを実行
 ```
