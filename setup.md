@@ -113,3 +113,46 @@ rbenv install --list
 rbenv install 3.1.2
 rbenv global 3.1.2
 ```
+
+# vscode 環境のセットアップ
+## keybindings.json
+```JSON
+[
+    {
+        "key": "ctrl+;",                "command": "workbench.action.terminal.forcus",
+                                        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+;",                "command": "workbench.action.forcusFirstEditorGroup",
+                                        "when": "terminalFocus"
+    }
+]
+```
+
+## settings.jfon
+```JSON
+{
+    "editor.tabSize": 2,
+    // 入力補完を表示する
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
+    "editor.renderLineHighlight": "all",
+    "editor.cursorBlinking": "smooth",
+    // 制御文字を表示
+    "editor.renderControlCharacters": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "editor.renderWhitespace": "boundary",
+    "ruby.intellisense": "rubyLocate",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.minimap.enabled": false,
+    "files.insertFinalNewline": true,
+    "diffEditor.maxComputationTime": 0,
+    "files.trimTrailingWhitespace": true
+}
+```
