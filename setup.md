@@ -30,14 +30,21 @@
 ## Homebrew
 - `brew bundle` を実行し、色々インストールする
 
-# zshrc
+## zshrc
 ```
 cp dotfiles/.vimrc ~/.zshrc
 
 source ~/.zshrc
 ```
 
-# vimrc
+## ターミナルのログを移動
+- 旧 PC の　~/.zsh_history を新 PC に移動（zsh_history_old）
+- 新 PC で以下を実行
+```
+cat zsh_history_old >> ~/.zsh_history
+```
+
+## vimrc
 ```
 cp dotfiles/.vimrc ~/.vimrc
 
@@ -47,7 +54,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 - plugin のインストール（vim のコンソール内）
   - :PluginInstall
 
-# SSH キーの設定
+## SSH キーの設定
 ```
 cd ~/.ssh
 ssh-keygen -t rsa
@@ -81,6 +88,8 @@ ssh -T git@github.com
   - true
 - Profiles > Windows > Keys > General > A hotkey opens a dedicated window with thid profile.
   - configure hotkey window
+    - Pin hotkey window (stays open on loss of keyboard focus)
+      - true
     - floating window
       - true
     - hotkey
