@@ -21,7 +21,6 @@
   - https://github.com/kevinSuttle/macOS-Defaults/blob/master/.macos
 
 ## Karabiner の設定
-### 補足
 - caps_lock → left_control に変更
 - 外部キーボードに関する設定は繋いだ状態でやる
 - なんかうまく反映されない時は karabiner を再起動したら直った
