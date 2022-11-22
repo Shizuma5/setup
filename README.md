@@ -34,7 +34,7 @@ brew bundle
 
 ## zshrc
 ```
-cp dotfiles/.vimrc ~/.zshrc
+cp dotfiles/.zshrc ~/.zshrc
 
 source ~/.zshrc
 ```
